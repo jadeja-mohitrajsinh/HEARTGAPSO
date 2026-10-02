@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "data_path": "heart+disease/processed.cleveland.data",
+  "data_sha256": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8",
+  "model_sha256": "dcbfba89daf7b57f67ec1acee3a326232e9251ac76d54ee73cc0012b56c12a06",
+  "preprocessor_sha256": "53a25d4f2a5b2da41fa9ddf92ab05a793e4ea91b663042efb02fe8d385f55ab5",
+  "source_sha256": {
+    "train.py": "c1596dbfc3b2d3d8faf546fde993d2b4308418881bd08ae945664d2e0a6e6466",
+    "src\\__init__.py": "dd08ca3722b1e33186b9bd2ee5029a96cb64ad6f3ce78f9b4cea0dc1c4200ee6",
+    "src\\cross_validation.py": "d66de269cc432195515e3ac92e8f1e0e279bd85bb9075f0f8d2a96d5d1cef31b",
+    "src\\data_loader.py": "c55474a850bc501bb141010b26854f1c49d56d8a0cd791eac9be493e47449394",
+    "src\\evaluation.py": "812ccb571ee86662943602215f9757ce2dc0de593e228a508b10598a66f0f9e0",
+    "src\\feature_selection.py": "e2852706630267e9bdb1d01fb93eedd83a036d32e71143d6dc00e357b95ad683",
+    "src\\fitness.py": "643126eaa3c441b8b2bfee3ba2b555d0d7cc5de774ba99fcc2d79369a656bf3f",
+    "src\\gapso_optimizer.py": "720601fda638266957340996b5895c3d44ca74c993819e3be1a1607d641326af",
+    "src\\genetic_algorithm.py": "0e157497fefee69a5fac335c5b3fab9d85a9d3fa08ca414c6c8af270c6e753e9",
+    "src\\metrics_calculator.py": "bac0092e794896d0f5268b7835448730b36ab676a1607e3153cfb51445f985b8",
+    "src\\model_definitions.py": "5afa3defd2f5869532afcbe20dafa612104d137f3b55af0cbec1e986f704dcc8",
+    "src\\particle_swarm.py": "087a24c5ed9201c298ee7f28e9b6720929a95fccdcbcb9dfdab19d8289857a99",
+    "src\\preprocessing.py": "a9b0e739c05632880565e24c15888321fdcbd02f160140f480cb27b3ead0da22",
+    "src\\preprocessing_pipeline.py": "e7357dc4404fffd59c7056303173d98594676ac5612dc764ed6795174c355da8",
+    "src\\random_forest.py": "66b3928988c16101b8736d134d90009140cb7cd60675808545026ab7b4ece311",
+    "src\\statistical_analysis.py": "56c501ba103e88ddf6898c2f5a82b31f5cf3c9f11e9cc9c7cd07a825c7279847"
+  },
+  "runtime": {
+    "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.0",
+    "pandas": "3.0.3",
+    "scikit_learn": "1.9.0"
+  },
+  "holdout_policy": "Seed-42 stratified 20% Cleveland holdout; excluded from optimizer selection."
+}

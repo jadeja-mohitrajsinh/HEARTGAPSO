@@ -1,0 +1,121 @@
+[
+  {
+    "candidate_id": 1,
+    "fast_rank": 1,
+    "screening_rank": 1,
+    "final_rank": 3,
+    "feature_subset": [
+      "sex",
+      "cp",
+      "chol",
+      "slope",
+      "ca",
+      "thal"
+    ],
+    "feature_count": 6,
+    "rf_parameters": {
+      "n_estimators": 200,
+      "max_depth": 6,
+      "min_samples_split": 15,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt",
+      "class_weight": "balanced"
+    },
+    "screening_fitness": 0.8484589340695566,
+    "high_fidelity_fitness": 0.8349060031241986,
+    "final_fitness": 0.8354224234652016,
+    "threshold": 0.52,
+    "cv_roc_auc": 0.8950553607042157,
+    "cv_accuracy": 0.8243801652892562,
+    "cv_f1": 0.8089887640449438,
+    "cv_sensitivity": 0.8108108108108109,
+    "cv_specificity": 0.8358778625954199,
+    "cv_std": 0.045358686009937955,
+    "seed_mean_fitness": 0.8354316928553661,
+    "seed_std": 0.0004634695082250636,
+    "seed_scores": [
+      0.8349060031241986,
+      0.8360335712111693,
+      0.8353555042307306
+    ]
+  },
+  {
+    "candidate_id": 4,
+    "fast_rank": 4,
+    "screening_rank": 4,
+    "final_rank": 2,
+    "feature_subset": [
+      "sex",
+      "cp",
+      "slope",
+      "ca",
+      "thal"
+    ],
+    "feature_count": 5,
+    "rf_parameters": {
+      "n_estimators": 200,
+      "max_depth": 4,
+      "min_samples_split": 10,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt",
+      "class_weight": null
+    },
+    "screening_fitness": 0.8409527946731941,
+    "high_fidelity_fitness": 0.8407632217802274,
+    "final_fitness": 0.8376046600927781,
+    "threshold": 0.53,
+    "cv_roc_auc": 0.8972904201911835,
+    "cv_accuracy": 0.8347107438016529,
+    "cv_f1": 0.8148148148148148,
+    "cv_sensitivity": 0.7927927927927928,
+    "cv_specificity": 0.8702290076335878,
+    "cv_std": 0.04747798517732531,
+    "seed_mean_fitness": 0.8376748560631387,
+    "seed_std": 0.0035097985180333846,
+    "seed_scores": [
+      0.8407632217802274,
+      0.8327654798440403,
+      0.8394958665651484
+    ]
+  },
+  {
+    "candidate_id": 7,
+    "fast_rank": 7,
+    "screening_rank": 7,
+    "final_rank": 1,
+    "feature_subset": [
+      "age",
+      "sex",
+      "cp",
+      "oldpeak",
+      "ca",
+      "thal"
+    ],
+    "feature_count": 6,
+    "rf_parameters": {
+      "n_estimators": 200,
+      "max_depth": 8,
+      "min_samples_split": 15,
+      "min_samples_leaf": 3,
+      "max_features": "sqrt",
+      "class_weight": "balanced"
+    },
+    "screening_fitness": 0.8380518072374316,
+    "high_fidelity_fitness": 0.8349671770075417,
+    "final_fitness": 0.8383563550545866,
+    "threshold": 0.5,
+    "cv_roc_auc": 0.8974107695481741,
+    "cv_accuracy": 0.8223140495867769,
+    "cv_f1": 0.8071748878923767,
+    "cv_sensitivity": 0.8108108108108109,
+    "cv_specificity": 0.8320610687022901,
+    "cv_std": 0.03810876261639222,
+    "seed_mean_fitness": 0.8384089999642086,
+    "seed_std": 0.0026322454810967307,
+    "seed_scores": [
+      0.8349671770075417,
+      0.8389017154238415,
+      0.8413581074612426
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "Accuracy": 0.8852459016393442,
+  "ROC-AUC": 0.961038961038961,
+  "Sensitivity / Recall": 0.9285714285714286,
+  "Specificity": 0.8484848484848485,
+  "Precision": 0.8387096774193549,
+  "F1-Score": 0.8813559322033898,
+  "Classification Threshold": 0.5,
+  "selected_features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "number_selected_features": 13,
+  "best_rf_parameters": {
+    "n_estimators": 100,
+    "max_depth": 10,
+    "min_samples_split": 5,
+    "min_samples_leaf": 3,
+    "max_features": "sqrt",
+    "class_weight": "balanced"
+  },
+  "optimization_fitness": 0.8208293655196676,
+  "optimization_runtime_seconds": 1.9087438999995356,
+  "classification_threshold": 0.5,
+  "seed": 42,
+  "confusion_matrix": [
+    [
+      28,
+      5
+    ],
+    [
+      2,
+      26
+    ]
+  ]
+}

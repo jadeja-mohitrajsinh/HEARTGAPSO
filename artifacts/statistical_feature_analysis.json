@@ -1,0 +1,134 @@
+{
+    "features": [
+        {
+            "feature": "thal",
+            "t2_statistical_score": 73.0297493999616,
+            "p_value": 1.38608993651635e-16,
+            "class_0_mean": 3.732824427480916,
+            "class_1_mean": 5.881818181818182,
+            "mutation_probability": 0.19999999999999996,
+            "importance_rank": 1
+        },
+        {
+            "feature": "cp",
+            "t2_statistical_score": 58.57667557032262,
+            "p_value": 1.183782473817577e-12,
+            "class_0_mean": 2.7938931297709924,
+            "class_1_mean": 3.5765765765765765,
+            "mutation_probability": 0.19999999999982243,
+            "importance_rank": 2
+        },
+        {
+            "feature": "ca",
+            "t2_statistical_score": 54.229466683276506,
+            "p_value": 1.0024818417230863e-11,
+            "class_0_mean": 0.24427480916030533,
+            "class_1_mean": 1.0454545454545454,
+            "mutation_probability": 0.19999999999849627,
+            "importance_rank": 3
+        },
+        {
+            "feature": "thalach",
+            "t2_statistical_score": 46.69159703534912,
+            "p_value": 8.770147835695588e-11,
+            "class_0_mean": 158.49618320610688,
+            "class_1_mean": 139.8918918918919,
+            "mutation_probability": 0.19999999998684476,
+            "importance_rank": 4
+        },
+        {
+            "feature": "exang",
+            "t2_statistical_score": 40.96596461597793,
+            "p_value": 1.5490347522075734e-10,
+            "class_0_mean": 0.1450381679389313,
+            "class_1_mean": 0.5405405405405406,
+            "mutation_probability": 0.1999999999767645,
+            "importance_rank": 5
+        },
+        {
+            "feature": "oldpeak",
+            "t2_statistical_score": 40.288940744197475,
+            "p_value": 1.8659236883760995e-09,
+            "class_0_mean": 0.5946564885496184,
+            "class_1_mean": 1.4765765765765764,
+            "mutation_probability": 0.19999999972011145,
+            "importance_rank": 6
+        },
+        {
+            "feature": "slope",
+            "t2_statistical_score": 33.2713773657838,
+            "p_value": 5.959532635025536e-08,
+            "class_0_mean": 1.4045801526717556,
+            "class_1_mean": 1.8018018018018018,
+            "mutation_probability": 0.19999999106070104,
+            "importance_rank": 7
+        },
+        {
+            "feature": "sex",
+            "t2_statistical_score": 21.698776202592995,
+            "p_value": 3.189947205644366e-06,
+            "class_0_mean": 0.549618320610687,
+            "class_1_mean": 0.8378378378378378,
+            "mutation_probability": 0.19999952150791916,
+            "importance_rank": 8
+        },
+        {
+            "feature": "age",
+            "t2_statistical_score": 11.321192261795915,
+            "p_value": 0.0008919972151007579,
+            "class_0_mean": 52.81679389312977,
+            "class_1_mean": 56.5945945945946,
+            "mutation_probability": 0.1998662004177349,
+            "importance_rank": 9
+        },
+        {
+            "feature": "restecg",
+            "t2_statistical_score": 7.080322997877723,
+            "p_value": 0.02900864183900153,
+            "class_0_mean": 0.8320610687022901,
+            "class_1_mean": 1.1531531531531531,
+            "mutation_probability": 0.19564870372414978,
+            "importance_rank": 10
+        },
+        {
+            "feature": "trestbps",
+            "t2_statistical_score": 4.439641958974254,
+            "p_value": 0.036235833712053564,
+            "class_0_mean": 128.75572519083968,
+            "class_1_mean": 133.55855855855856,
+            "mutation_probability": 0.194564624943192,
+            "importance_rank": 11
+        },
+        {
+            "feature": "chol",
+            "t2_statistical_score": 1.481936344347337,
+            "p_value": 0.22466766282499168,
+            "class_0_mean": 246.0916030534351,
+            "class_1_mean": 254.26126126126127,
+            "mutation_probability": 0.16629985057625124,
+            "importance_rank": 12
+        },
+        {
+            "feature": "fbs",
+            "t2_statistical_score": 0.2813965641712075,
+            "p_value": 0.5957873168191351,
+            "class_0_mean": 0.1297709923664122,
+            "class_1_mean": 0.16216216216216217,
+            "mutation_probability": 0.11063190247712973,
+            "importance_rank": 13
+        }
+    ],
+    "important_features": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak",
+        "slope",
+        "ca",
+        "thal"
+    ]
+}

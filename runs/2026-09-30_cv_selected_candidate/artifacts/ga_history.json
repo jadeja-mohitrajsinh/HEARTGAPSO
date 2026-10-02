@@ -1,0 +1,114 @@
+[
+  {
+    "generation": 0,
+    "best_fitness": 0.8484589340695566,
+    "mean_fitness": 0.7991987259729334,
+    "selected_feature_counts": [
+      6,
+      7,
+      6,
+      11,
+      7,
+      8,
+      13,
+      7,
+      7,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "generation": 1,
+    "best_fitness": 0.8484589340695566,
+    "mean_fitness": 0.8185840978014239,
+    "selected_feature_counts": [
+      6,
+      6,
+      9,
+      7,
+      7,
+      6,
+      5,
+      13,
+      10,
+      9,
+      7,
+      10
+    ]
+  },
+  {
+    "generation": 2,
+    "best_fitness": 0.8484589340695566,
+    "mean_fitness": 0.8218477249099801,
+    "selected_feature_counts": [
+      6,
+      5,
+      7,
+      5,
+      6,
+      8,
+      8,
+      9,
+      9,
+      6,
+      8,
+      5
+    ]
+  },
+  {
+    "generation": 3,
+    "best_fitness": 0.8484589340695566,
+    "mean_fitness": 0.8275156977644854,
+    "selected_feature_counts": [
+      6,
+      5,
+      6,
+      5,
+      8,
+      8,
+      10,
+      8,
+      9,
+      6,
+      8,
+      3
+    ]
+  },
+  {
+    "generation": 4,
+    "best_fitness": 0.8484589340695566,
+    "mean_fitness": 0.8256244579938313,
+    "selected_feature_counts": [
+      6,
+      5,
+      5,
+      5,
+      7,
+      10,
+      8,
+      9,
+      6,
+      8,
+      3,
+      6
+    ]
+  },
+  {
+    "generation": 5,
+    "best_fitness": 0.8484589340695566,
+    "mean_fitness": 0.8276868069549206,
+    "selected_feature_counts": [
+      6,
+      5,
+      6,
+      11,
+      9,
+      11,
+      9,
+      7,
+      8,
+      3
+    ]
+  }
+]

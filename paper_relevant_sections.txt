@@ -1,0 +1,565 @@
+=== PAGE 9 ===
+9 ---
+(Sex, Fbs, and Restecg) are non-continuous, and have the slightest variances, so they provide
+much less information according to the entropy theory. The remaining attributes ( Cp, Exang,
+Slope, Ca, and Thal) are non-continuous, and have the highest variances, providing the
+essential information for classification. Further correlation analysis is implemented for ( Cp,
+Exang, Slope, Ca, and Thal) and shows some correlation between (exang) and the other four
+attributes as shown in Table 7. After excluding ( Exang), the remaining four attributes ( Cp,
+Slope, Ca, and Thal) are the most significant. These four attributes will have a lower mutation
+probability (e.g., 10−3) throughout GA evolution.
+Table 6 presents the T2 metric for each attribute in the Statlog dataset. The attributes
+(Thalach, Chol, Thal, Trestbps,a n d Age) have the most considerable variance. The attributes
+(Sex, Fbs, and Restecg) are non-continuous, and have the slightest variances, so they provide
+much less information according to the entropy theory. The remaining attributes ( Cp, Exang,
+Oldpeak, Slope, and Ca) are non-continuous, and have the highest variances, providing the
+essential information for classification. Further correlation analysis for ( Cp, Exang, Oldpeak,
+Table 3 Statistics of the attributes in the Cleveland and Statlog dataset when Num =1
+Feature Cleveland Statlog
+Mean Standard Deviation Mean Standard Deviation
+Age 52.496970 9.550651 56.591667 8.116273
+Sex 0.563636 0.497444 0.833333 0.374241
+Cp 1.375758 0.952222 3.616667 0.779823
+Trestbps 129.303030 16.169613 134.441667 19.095424
+Chol 242.230303 53.552872 256.466667 47.969166
+Fbs 0.139394 0.347412 0.141667 0.350170
+Restecg 0.593939 0.504818 1.225000 0.974140
+Thalach 158.466667 19.174276 138.858333 23.130719
+Exang 0.139394 0.347412 0.550000 0.499580
+Oldpeak 0.583030 0.780683 1.584167 1.282067
+Slope 1.593939 0.593635 1.816667 0.564843
+Ca 0.363636 0.848894 1.150000 1.034286
+Thal 2.121212 0.465752 5.833333 1.769648
+Table 4 Statistics of the attributes in the Cleveland and Statlog dataset when Num =0
+Feature Cleveland Statlog
+Mean Standard Deviation Mean Standard Deviation
+Age 56.601449 7.962082 52.706667 9.509830
+Sex 0.826087 0.380416 0.553333 0.498813
+Cp 0.478261 0.905920 2.820000 0.927362
+Trestbps 134.398551 18.729944 128.866667 16.457660
+Chol 251.086957 49.454614 244.213333 54.019085
+Fbs 0.159420 0.367401 0.153333 0.361516
+Restecg 0.449275 0.541321 0.860000 0.990085
+Thalach 139.101449 22.598782 158.333333 19.283357
+Exang 0.550725 0.499232 0.153333 0.361516
+Oldpeak 1.585507 1.300340 0.622667 0.800851
+Slope 1.166667 0.561324 1.400000 0.590757
+Ca 1.166667 1.043460 0.286667 0.648557
+Thal 2.543478 0.684762 3.786667 1.556914
+18163Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 10 ===
+10 ---
+Slope, and Ca) shows some correlation between (Exang) and the other four attributes as shown
+in Table 8. After excluding (Exang ), the remaining four attributes ( Cp, Oldpeak, Slope, and
+Ca) are the most significant. These four attributes will have a lower mutation probability (e.g.,
+10−3) throughout GA evolution.
+Table 5 The T2 metric for all attributes in the Cleveland dataset
+Feature S P
+X 1−X 0
+T2
+Age 8.827614 −4.104480 143.414563
+Sex 0.444178 −0.262451 11.653548
+Cp 0.931148 0.897497 65.008119
+Trestbps 17.334947 −5.095520 112.557643
+Chol 51.687551 −8.856653 114.044344
+Fbs 0.356510 −0.020026 0.084538
+Restecg 0.521432 0.144664 3.016085
+Thalach 20.732938 19.365217 1359.265531
+Exang 0.416513 −0.411331 30.526314
+Oldpeak 1.017205 −1.002477 74.243914
+Slope 0.578929 0.427273 23.697672
+Ca 0.937450 −0.803030 51.693507
+Thal 0.565434 −0.422266 23.697943
+Table 6 The T2 metric for all attributes in the Statlog dataset
+Feature S P
+X 1−X 0
+T2
+Age 8.891049 3.885000 113.171686
+Sex 0.443499 0.280000 11.785068
+Cp 0.861850 0.796667 49.094218
+Trestbps 17.628906 5.575000 117.536598
+Chol 51.332741 12.253333 194.994691
+Fbs 0.356478 −0.011667 0.025455
+Restecg 0.983005 0.365000 9.035219
+Thalach 20.991701 −19.475000 1204.525619
+Exang 0.422820 0.396667 24.808727
+Oldpeak 1.014525 0.961500 60.749741
+Slope 0.579250 0.416667 19.981132
+Ca 0.819832 0.863333 60.609500
+Thal 1.651374 2.046667 169.105398
+Table 7 Correlation analysis in the Cleveland dataset
+Features CP Slope Ca Thal Exang
+Cp 1 0.11971659 −0.18105303 −0.16173557 −0.39428027
+Slope 0.11971659 1 −0.08015521 −0.10476379 −0.25774837
+Ca −0.18105303 −0.08015521 1 0.15183213 0.11573938
+Thal −0.16173557 −0.10476379 0.15183213 1 0.20675379
+Exang −0.39428027 −0.25774837 0.11573938 0.20675379 1
+18164 Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 11 ===
+11 ---
+3.2.2 Discriminate mutation strategy in genetic algorithm
+In the current GA algorithm, the individual dimension is 13 (as there are 13
+attributes), so it requires a population size of 2 13 = 8192 individuals to cover all
+possible combinations. An improvement is always selecting the attributes with the
+most critical information to be endowed w ith less mutation probability (i.e., 10 −3). In
+comparison, the remaining attributes wi ll have a higher mutation probability to
+explore more individuals with higher fitness. In the simulation, the sets ( Cp, Slope,
+Ca, and Thal)a n d( Cp, Oldpeak, Slope, and Ca) are the most significant attributes for
+Celeveland and Statlog, respectively, which have less mutation probability, (i.e., 10 −3).
+The remaining attributes will have higher but equal mutation probabilities. The
+initialization of the population at the start of the GA should also be modified using
+this discriminate mutation strategy. In the initial population, the individual should
+always have the most significant attributes.
+3.2.3 Data pre-processing
+The data are normalized before performing FS. To that end, we normalize the dataset
+values. This process has been gaining im portance because all features may have
+different data types, and it eliminates the numerical difficulties due to the different
+range of values during the computation process. In the proposed approach, we
+implemented min–max normalization, a technique that converts a value a to a in
+the range of [ max _ new − min _ new] as follows:
+a ¼ a−amin
+amax−amin
+/C2 max new−min new½/C138 þ min new; ð3Þ
+where from min _ new to max _ new denotes the range of the transformed values. We
+implemented min _ new =0 a n d max _ new = 1. Subsequently, these transformed values
+were used as input for the FS method.
+3.3 Hybrid modified genetic algorithm and particle swarm optimization
+FS, which is a method of selecting reduced number of appropriate features, enhances the
+classification by determining the best subset of features from the set of original features. It
+eliminates unnecessary features, thereby lowering the computational and memory costs. It
+involves selecting a subset of features t from the total features T based on a particular
+optimization criterion. GA combined with PSO was used as an FS approach to search for
+Table 8 Correlation analysis in the Statlog dataset
+Features CP Slope Ca Exang Oldpeak
+Cp 1 0.13689972 0.22588953 0.35315984 0.16724401
+Slope 0.13689972 1 0.10949768 0.25590835 0.60971157
+Ca 0.22588953 0.10949768 1 0.15334736 0.25500546
+Exang 0.35315984 0.25590835 0.15334736 1 0.2746722
+Oldpeak 0.16724401 0.60971157 0.25500546 0.2746722 1
+18165Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 12 ===
+12 ---
+optimal solutions. GA was introduced by John Holland in 1975. Although they can be used for
+solving both search and optimization problems, they are best known for solving the latter
+(Holland, 1992). A GA is a search heuristic that mimics the natural evolution process. It is
+regularly used to produce useful solutions for the problems related to search and optimization.
+Notably, GA belongs to the broader category of evolutionary algorithms (EAs). In several real-
+world optimization projects, EAs have proved to be the most efficient solution. Substantially,
+Holland supposed that the population size is limitless, that the fitness function correctly
+represents the convenience of a solution, and that the correlations between the genes are very
+small, which leads to problems [ 9]. Population size is limited, impacting the GA ’s sampling
+capacity and efficiency.
+PSO were introduced by Eberhart and Kennedy [ 26] in 1995. It is a population-
+based optimization technique that is inspir ed by the behavior of fish schooling or bird
+flocking. PSO algorithm is one of several types of swarm intelligence algorithms. One
+of several PSO ’s main advantages is that it is computationally inexpensive due to its
+low system requirements [ 37]. Using a local search approach in combination with GA
+solve much of the hindrances that occur due to the finite population size. Hybridiza-
+tion has proven to be an efficient way to construct capable genetic algorithms. By
+adding new genes, a local search approach with GA helps neutralize much of the
+challenges that exist because of the limited population size as well as the genetic drift
+dilemma [ 6]. A GA uses the laws of genetics as its paradigm for implementing
+problem-solving on a population ( P) of individuals. Each individual is characterized
+by a set of variables called genes. To build a chromosome, genes are combined into a
+string. Therefore, each solution is represented by a chromosome.
+Chromosomes Ck,w h e r ek =( 1 , …, P), are encoded in a binary vector Bk of length
+n. Binary encoding is used to identify whether a feature is selected for input or not. The
+group of all the chromosomes is referred to as population. In the initial population, the
+individual should always have the four most significant attributes, ( Cp, Slope, Ca, and
+Thal). After that, a GA accomplishes its task via four basic operations: modified
+selection, crossover, modified mutation, and fitness calculation. We believe that (non-
+fit individuals) can contain good genes that can direct the search process ’ cursor to
+locations in the search space where significant improvements can be found. Accordingly,
+in the selection operation, the rejected chrom osomes (non-fit individuals) are passed to
+PSO for reformation as GA searches for good chromosomes, not good genes, and the
+best individuals (fittest individuals) are selected based on the value of the fitness
+function, which is calculated in both GA and PSO using the RF algorithm and with
+high efficiency to survive to next generatio n. Moreover, RF prevents over-fitting, which
+is one of the main challenges in heart-diseas e prediction. Therefore, in the proposed
+GAPSO-RF, the RF classifier is used with GA to select the best features. Algorithm 1
+presents the hybrid approach using modified genetic algorithm and PSO. RFs comprise
+many individual decision-trees, which function as an ensemble. An algorithm that can
+construct many small decision-trees using a few features is considered computationally
+cheap. If we can create several small, weak decision-trees in parallel, then by averaging
+or taking the majority vote, we can combine the trees to form a single, strong learner.
+Practically, RFs are the most effective learning algorithms to date. The RF algorithm is
+illustrated in Algorithm 2. In the following subsections, we detail the GAPSO-RF
+processes, namely, selection, crossover, and mutation.
+18166 Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 13 ===
+13 ---
+18167Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 14 ===
+14 ---
+3.3.1 Modified tournament-selection operator
+In a GA cycle, the initial population is set to be 50 and the maximum iteration number to be 30
+generations. Subsequently, we begin the tournament-selection process, which is critical to
+selecting the best individuals, which have been appraised for their fitness value, from the
+current generation for reproduction or to be survived in the successive generation and the
+rejected individuals are passed to the PSO for reformation. The population of PSO will be
+made of these rejected individuals who will connect with one another to update their position
+and velocity to achieve the best possible result from the non-fit individuals. The best
+individuals of PSO will be injected to the new population of GA.
+The fitness function was applied in GA by implementing the RF classifier, eval-
+uating the score of each solution, and observing how close the solution was to the
+one we needed. To calculate the fitness function, a chromosome must first be decoded
+in the binary representation. Tournament selection was applied with a size of 0.26.
+Although tournament selection is equival ent to rank selection with respect to the
+selection pressure, it is more effective in computation and more appropriate for
+parallel implementation [ 33].
+The fitness of the individuals is calculated by 1) transforming the feature space of the
+dataset, and 2) applying k-fold cross-validation or holdout validation and obtaining a high
+accuracy score from the RF classifier. The selection probability of each individual is calculated
+as follows:
+Ps cðÞ ¼ vcðÞ
+∑N
+j¼1vcðÞ ð4Þ
+where Ps(c)a n d v(c) denote the probability of selection and the fitness value for the cth
+chromosome, respectively.
+3.3.2 Crossover operator
+In this process, two parent chromosomes are used to construct a new chromosome on the basis
+of crossover probability, which is 0.5 in the experiments. The constructed chromosome has a
+better string than those of its parent chromosomes. The following are the steps of the
+crossover:
+1) A combination of two individual strings is chosen with the assistance of the reproduction
+operator.
+2) A cross-site is randomly picked alongside the length of the string.
+3) swapping the positions of values between the two strings.
+3.3.3 Modified mutation operator
+Upon the completion of the crossover process, the strings undergo mutation, which is the
+random change in the value of a gene. Mutation means that we flip a single bit from 0 to 1 or
+vice versa. The mutation operator is used to obtain a better solution by changing the current
+one. Mutation prevents the GA from being stuck in a local minimum. The mutation operator is
+18168 Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 15 ===
+15 ---
+modified by implementing the discriminate mutation strategy based statistical analysis as
+illustrated in Section 3.2.2.
+3.4 Random forest classification
+In the proposed approach, the RF algorithm is used for binary classification. RF constructs
+many decision-trees during the training period and generates a class that has a mean prediction.
+The hyper-parameters of RF were tuned using a grid search. A wide range of parameter values
+were implemented in grid search as shown in Table 9. The best set of parameters extracted
+from the grid search was used to train random forest to get max classification accuracy.
+We specify the number of random trees as 1000, maximal depth as 10 using confidence 0.5
+in vote strategy and Gini impurity in criterion (split criterion); pruning and pre-pruning are
+applied; minimal leaf size is 2; the minimal size for splitting is 4. The Gini impurity is
+calculated as follows:
+G ¼ ∑C
+j¼1pjðÞ * 1−pjðÞðÞ ð 5Þ
+where C denotes the number of classes and p(j) the probability of choosing a class j data point.
+3.5 Performance measures
+Four measures were implemented to assess the performance of the classification models:
+accuracy, recall, precision, receiver operating characteristic (ROC), and area under the ROC
+curve (AUC). Accuracy represents the rate of correctness of a classifier. Therefore, we take the
+sum of true positive (TP) records and true negative (TN) records and then divide by the total
+number of records which represents the sum of TN, TP, false negative (FN) and false positive
+(FP); thus, accuracy denotes the ratio of the number of correctly predicted records to the total
+number of records, as shown in Eq. ( 6). Recall represents the rate of values that measures
+positive records that the classifier correctly predicted. Moreover, it is called true positive rate
+(TPR) or sensitivity. Thus, recall is calculated as shown in Eq. ( 7). Precision is the ratio of TP
+records to the total of positive predicted records, as shown in Eq. ( 8). The ROC curve is a
+graph of TPR versus false positive rate (FPR), where TPR is on the y-axis and FPR on the x-
+axis. The AUC metric is used to calculate AUC, and it describes the separability measurement
+or degree. It informs how the model can identify among classes.
+Accuracy ¼ TN þ TPðÞ
+TN þ TP þ FN þ FP ð6Þ
+Table 9 Grid search values for the proposed RF
+Parameter Grid search value
+No of trees 50, 100, 200, 500, 1000, 2000
+max_depth 3, 5, 10, 15
+min_samples_split 2, 5, 10, 20
+min_samples_leaf 1, 5, 10, 12
+max_features auto, log2, sqrt
+18169Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 16 ===
+16 ---
+Recall ¼ TP
+FN þ TP ð7Þ
+Precision ¼ TP
+FP þ TP ð8Þ
+4 Experiments results and discussion
+In this section, two public datasets, namely, Cleveland and Statlog, are used to evaluate the
+proposed approach, and then the classification performance of our approach is compared with
+those of other state-of-the-art methods. Moreover, the proposed approach will be compared
+with the methods that implement GA and with those that do not implement GA. In addition,
+we will discuss the complexity of the proposed approach.
+4.1 Experimental setup
+In this section, two types of experiments are implemented on the Cleveland and Statlog
+datasets to assess the efficacy of the proposed model. All the computations are performed
+on Google CoLab, which provides GPU Tesla k80 with 12 GB of GDDR5 VRAM, and Intel
+Xeon Processor with two 2.20-GHz cores and 13 GB RAM. Moreover, the Python program-
+ming software package scikit-learn is used for the experiments.
+4.2 Results of the Cleveland dataset
+The model was applied on the Cleveland heart-disease dataset, which had 13 features. All the
+303 heart-disease records of the dataset were considered. To assess the classification perfor-
+mance, the results obtained from the experiments of the proposed model were compared with
+those of other state-of-the-art methods in terms of heart-disease prediction. In the first
+experiment, throughout cross-validation, the data records were divided into 10 folds; one-
+fold was used in testing, and the remaining nine folds were used in training. The data were
+divided into folds via stratified sampling, meaning that the class distribution (defined by the
+label attribute) in the subsets/folds was the same as that in the complete dataset. Finally, the
+result was obtained by averaging all the 10 iterations.
+In the second experiment, we performed the train/test holdout validation. The data were
+split as 70% for training and 30% for testing. The model was trained on 212 records and tested
+on the remaining 91 as unseen data. The primary reason behind using this distribution is to
+satisfactorily compare our approach with those in other researches on the same dataset. We ran
+the same experimental procedure five times, following which the mean of the five results was
+calculated. Table 10 compares the results of these two experiments with those of recent
+researches. Evidently, the proposed approach achieves better classification results than those
+of most methods. The experimental results on the Cleveland dataset confirm that the proposed
+approach achieves the accuracy rates of 87.8% and 95.6% for 10-fold and holdout (TR =
+18170 Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 19 ===
+19 ---
+Although several studies have implemented FS in their proposed methods, little attention
+has been given to optimizing fitness function in GA. In our proposed approach, we used RF as
+a fitness function in GA to get the maximum value of classification accuracy. We tuned the
+hyper-parameters of RF using grid search; after that, we applied pruning and pre-pruning.
+Besides that, we implemented the experiments in GA different hyper-parameters and different
+types of crossover, mutation and selection as shown in Fig. 5. In the crossover, we applied
+uniform as it achieved better results than one point. Moreover, we used tournament selection as
+it produced better results than roulette wheel.
+Table 14 summarizes the performance-evaluation results for both 10-fold and holdout (TR
+= 70%) validations on the Statlog dataset. As seen from Table 14, our proposed approach with
+the optimal selected features achieved a better performance than that achieved upon using all
+the features at once. Additionally, our proposed approach increases the average accuracy on
+Table 12 Benchmarking our approach with others in the literature on the Statlog dataset
+Study Method Accuracy
+(%)
+Pre-
+Processing
+Feature Selection Classification
+El-Bialy
+et al. [ 16]
+– manual C4.5 algorithm and fast
+decision tree
+76.60 (10-fold)
+Long et al.
+[30]
+min--max
+normalization
+Chaos-based firefly
+algorithm
+& rough set
+type-2 fuzzy logic 78.78 (holdout)
+Rado et al. [ 40] remove the
+missing
+values
+Correlation-based FS &
+Feature importance &
+Recursive feature
+elimination
+SVM 84 (10-fold)
+Mukherjee
+et al. [ 34]
+–– Multi-layer perceptron
+ensembles & SVM &
+Generalized additive
+model
+85 (10-fold)
+Yazid et al.
+[54]
+–– Flower pollination neural
+network
+89.60 (holdout)
+Karthikeyan
+and
+Kanimozhi.
+[24]
+–– CNN & Deep belief
+network algorithm
+90 (holdout)
+GAPSO-RF
+(ours)
+min--max
+normalization
+GA-PSO RF 87.78 (10-fold)
+GAPSO-RF
+(ours)
+min--max
+normalization
+GA-PSO RF 91.40
+(holdout)
+Table 11 Compare the subset features selected from GA with other classifiers for Cleveland dataset
+Model Accuracy (%)
+Logistic regression (SVM) 80.22
+SVM 81.32
+Decision trees 82.42
+NB 85.71
+Proposed RF 95.60
+18173Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 20 ===
+20 ---
+the Statlog dataset by 5.93% and 7.45% in the 10-fold and holdout (TR = 70%) validations,
+respectively.
+4.4 Effectiveness of FS
+In this subsection, the performance of the FS process in GA is evaluated. FS improves the
+performance of the proposed approach compared with using all the features at once. The
+features sets of the Cleveland and Statlog datasets are reduced by 46.15% and 30.77%,
+respectively. From Table 15, it is evident the proposed approach decreased the number of
+features. The features selected in Cleveland dataset are 7 features ( Cp, Fbs, Restecg, Exang,
+Slope, Ca, and Thal) and for statlog dataset the features selected are 9 features ( Age, Sex, Cp,
+Fbs, Thalach, Exang, Slope, Ca, and Thal). The overall measurement results for the Cleveland
+dataset both with and without FS on GA are summarized in Table 16. As previously
+mentioned, the experiment was performed twice (10-fold and holdout (TR = 70%)). From
+the experimental results in Table 16, one can see that the proposed approach with selected
+optimal features achieves better performance than that achieved upon using all the features at
+once. Our proposed approach increases the average accuracy on the Cleveland dataset by
+4.33% and 6.59% in the 10-fold and holdout (TR = 70%) validations, respectively.
+Fig. 4 ROC curve of the Statlog dataset for the a 10-fold and b holdout (TR = 70%) validations
+Table 13 Compare the subset features selected from GA with other classifiers for Statlog dataset
+Model Accuracy (%)
+Decision trees 74.07
+Logistic regression (SVM) 83.95
+SVM 83.95
+NB 88.89
+Proposed RF 91.40
+18174 Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 21 ===
+21 ---
+4.5 Time complexity
+In this subsection, we compare the time complexity of our proposed approach GAPSO-RF
+with GA-based different models. Table17 shows the comparison of computational cost among
+the approaches on the Cleveland dataset. This table records the complexity time (i.e., FS and
+classification), number of generations, and prediction accuracy. We can see that the complex-
+ity time of our approach GAPSO-RF is not the best. However, as concluded from Table 17,
+our proposed approach achieves the best prediction accuracy compared to other GA-based
+methods. In addition, the proposed approach reached the best rate of 87.80% by the minimum
+number of generations 30.
+Fig. 5 Different hyper-parameters which affect the efficiency of GA. Red and green curves represent the max
+and average fitness, respectively.a number of generations = 50, population size = 50, crossover rate = 0.5 and
+mutation rate = 0.07. b number of generations = 50, population size = 50, crossover rate = 0.5 and mutation
+rate = −0.4. c number of generations = 30, population size = 50, crossover rate = 0.5 and mutation rate =
+0.07. d number of generations = 30, population size = 50, crossover rate = 0.5 and mutation rate = 0.08
+Table 14 Evaluation of the FS used in the proposed approach on the Statlog dataset
+FS Accuracy (%) Precision (%) Recall (%) AUC (%)
+10-fold Without 81.85 82.17 86.00 89.50
+With 87.78 87.26 91.33 91.00
+Holdout Without 83.95 86.36 84.44 91.90
+With 91.40 89.58 95.56 92.60
+18175Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 22 ===
+22 ---
+First, the proposed GAPSO-RF approach improves the conventional GA as follows: 1)
+Reduce the number of generations by 70%, 2) Execution time improved by 65.87%, and 3)
+Improve the prediction accuracy by 0.67%. Second, a convolutional neural network (CNN) is
+good in feature selection, as mentioned in [ 17, 52]. However, it consumes a higher compu-
+tation cost. Results show that GA-based CNN has a higher computational cost than others. In
+addition, the proposed GAPSO-RF outperforms GA-CNN in prediction accuracy and execu-
+tion time. In the future, the CNN model can be used for different types of datasets (e.g.,
+electrocardiogram (ECG) signals and images). The implementation of a discriminate mutation
+strategy in GA-based statistical analysis and the implementation of the PSO in local search are
+reasons to reduce the number of generations and thus reduce the execution time. Despite this,
+the execution time in our approach is relatively large. In the future, we intend to develop an
+efficient feature selection method with low complexity and high performance. Third, GA-NB
+achieves the best execution time due to the number of iterations in PSO and RF. Nevertheless,
+we outperform this approach by 5.88% in the average prediction accuracy.
+5 Conclusion
+We presented a GAPSO-RF-based FS approach with an RF classifier as the base of a fitness
+function to select significant features to increase the accuracy of heart-disease diagnosis. The
+proposed approach achieved high accuracy of 95.6% and 91.4% on the Cleveland and Statlog
+datasets, respectively. After that, the results of the proposed FS method are compared with the
+Table 15 Feature-dimension details for the Cleveland and Statlog datasets
+DataSet Original Selected Feature Subset Reduced (%)
+Cleveland 13 7 46.15
+Statlog 13 9 30.77
+Table 16 Evaluation of the FS employed in the proposed approach on the Cleveland dataset
+FS Accuracy (%) Precision (%) Recall (%) AUC (%)
+10-fold Without 83.17 83.72 78.26 91.30
+With 87.80 89.76 82.61 92.00
+Holdout Without 89.01 87.97 84.78 91.00
+With 95.60 97.44 92.68 94.00
+Table 17 Comparison of computational time of GAPSO-RF with other GA based different models
+Parameter Comparison Proposed GAPSO-RF Conventional GA GA-SVM GA-NB GA-CNN
+Number of generations 30 100 100 100 30
+Optimum classification (%) 87.80 87.13 85.64 83.68 86.39
+Time (second) 2559.10 7499.98 148.05 111.41 9185.88
+18176 Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+
+=== PAGE 23 ===
+23 ---
+results without using FS and found that it outperforms in accuracy. Moreover, it outperformed
+the existing state-of-the-art methods on the same datasets. Furthermore, a comparative analysis
+is performed between GAPSO-RF and conventional GA and found that our proposed ap-
+proach outperformed conventional GA. Additionally, we protected our model from overfitting
+by using the RF algorithm for classification. Hence, our experimental results confirmed that
+the proposed approach enhanced the decision-making process of the practitioners during heart-
+disease diagnosis.
+The following are some of the limitations of this research: First, more classifiers should be
+evaluated to have a more extensive evaluation of the results. Second, the proposed model’sk e y
+drawbacks are its high computational cost and temporal complexity, as it is based on the
+wrapper feature selection strategy. More studies need to be conducted to address the limita-
+tions of the proposed approach in the future. First, multi-objective genetic algorithm can be
+applied. Second, to overcome small-data limitations in heart-disease prediction, we plan to use
+in future work surrogate data or merging different heart-disease datasets. Finally, for electro-
+cardiogram (ECG) signals and images, further study can be carried out for improving the
+features selection by using convolutional neural network (CNN). Moreover, we intend to
+develop an efficient classifier to improve the performance.
+Funding Open access funding provided by The Science, Technology & Innovation Funding Authority (STDF)
+in cooperation with The Egyptian Knowledge Bank (EKB).
+Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which
+permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give
+appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and
+indicate if changes were made. The images or other third party material in this article are included in the article's
+Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included
+in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or
+exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy
+of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+References
+1. Abdel-Basset M, Gamal A, Manogaran G, Long HV (2019) A novel group decision making model based
+on neutrosophic sets for heart disease diagnosis. Multimed Tools Appl:1–26
+2. Adler ED, Voors AA, Klein L, Macheret F, Braun OO, Urey MA, Zhu W, Sama I, Tadel M, Campagnari C,
+Greenberg B, Yagil A (2020) Improving risk prediction in heart failure using machine learning. Eur J Heart
+Fail 22:139–147
+3. Ali L, Niamat A, Khan JA, Golilarz NA, Xingzhong X, Noor A, Nour R, Bukhari SAC (2019) An
+optimized stacked support vector machines based expert system for the effective prediction of heart failure.
+IEEE Access 7:54007–54014
+4. Ali L, Rahman A, Khan A, Zhou M, Javeed A, Khan JA (2019) An automated diagnostic system for heart
+disease prediction based on x2 statistical model and optimally configured deep neural network. IEEE
+Access 7:34938–34945
+5. Amin MS, Chiam YK, Varathan KD (2019) Identification of significant features and data mining techniques
+in predicting heart disease. Telematics Inform 36:82–93
+6. Asoh H, Mühlenbein H (1994) On the mean convergence time of evolutionary algorithms without selection
+and mutation. In: International conference on parallel problem solving from nature, pp 88 –97
+7. Atal DK, Singh M (2020) A dictionary matrix generation based compression and bitwise embedding
+mechanisms for ECG signal classification. Multimed Tools Appl 79:13139–13159
+18177Multimedia Tools and Applications (2022) 81:18155–18179
+Content courtesy of Springer Nature, terms of use apply. Rights reserved.
+
+

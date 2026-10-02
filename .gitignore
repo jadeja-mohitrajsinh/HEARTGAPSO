@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+models/*.pkl
+models/*.json
+results/*.json
+results/*.png
